@@ -1,3 +1,8 @@
+1.18.0 / 2023-12-26
+===================
+
+  * Add: `cookie.partitioned` option to allow partitioning cookies
+
 1.17.3 / 2022-05-11
 ===================
 

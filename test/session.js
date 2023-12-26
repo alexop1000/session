@@ -2095,6 +2095,18 @@ describe('session()', function(){
         })
       })
 
+      describe('.partitioned', function () {
+
+        it('should have partitioned cookie', function (done) {
+          var server = createServer({ cookie: { maxAge: 2000, partitioned: true } });
+
+          request(server)
+          .get('/')
+          .expect(shouldSetCookieWithAttribute('connect.sid', 'Partitioned'))
+          .expect(200, done)
+        })
+      })
+
       describe('.expires', function(){
         describe('when given a Date', function(){
           it('should set absolute', function(done){
