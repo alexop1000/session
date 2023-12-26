@@ -7,7 +7,7 @@
     "Douglas Christopher Wilson <doug@somethingdoug.com>",
     "Joe Wagner <njwjs722@gmail.com>"
   ],
-  "repository": "alexop1000/session",
+  "repository": "https://github.com/alexop1000/session",
   "license": "MIT",
   "dependencies": {
     "cookie": "0.6.0",
